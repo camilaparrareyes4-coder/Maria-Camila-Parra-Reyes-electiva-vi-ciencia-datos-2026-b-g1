@@ -1,0 +1,5 @@
+# Calidad de datos — Registro de producción
+
+## Data & cleaning
+
+The dataset contains production records from a packaging plant, covering four machines and three shifts from September 7 to October 3, 2026. Each record includes the date, shift, machine, produced units, defective units, and temperature. We cleaned the data by removing exact duplicates, standardizing machine and shift names, converting decimal commas and dates to consistent formats, and converting Fahrenheit temperatures to Celsius. We removed rows with missing defective values and impossible production values, and we imputed missing temperatures using the median temperature of each machine. After cleaning, the dataset decreased from 297 to 271 rows and reached 100% quality in completeness, uniqueness, consistency, format, and validity. The first business question asks which machine and shift have the highest defect rate and which machine should receive maintenance first. The second business question examines whether temperature is related to the defect rate, especially when comparing machines M-03 and M-01.
